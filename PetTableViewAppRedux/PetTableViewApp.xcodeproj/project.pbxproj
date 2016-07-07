@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ECA254E1D2EC22700F5135F /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA254C1D2EC22700F5135F /* CardStack.swift */; };
+		5ECA254F1D2EC22700F5135F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA254D1D2EC22700F5135F /* CardView.swift */; };
 		FDDA0CBF1D2D9D6100A9390A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA0CBE1D2D9D6100A9390A /* AppDelegate.swift */; };
 		FDDA0CC11D2D9D6100A9390A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA0CC01D2D9D6100A9390A /* FirstViewController.swift */; };
 		FDDA0CC31D2D9D6100A9390A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA0CC21D2D9D6100A9390A /* SecondViewController.swift */; };
 		FDDA0CC61D2D9D6100A9390A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA0CC41D2D9D6100A9390A /* Main.storyboard */; };
 		FDDA0CC81D2D9D6100A9390A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA0CC71D2D9D6100A9390A /* Assets.xcassets */; };
 		FDDA0CCB1D2D9D6100A9390A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDA0CC91D2D9D6100A9390A /* LaunchScreen.storyboard */; };
-		FDDA0CF31D2DA50200A9390A /* Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA0CF21D2DA50200A9390A /* Dogs.swift */; };
+		FDDA0CF31D2DA50200A9390A /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA0CF21D2DA50200A9390A /* Dog.swift */; };
 		FDDA0CF71D2DAC4A00A9390A /* DogsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA0CF61D2DAC4A00A9390A /* DogsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5ECA254C1D2EC22700F5135F /* CardStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		5ECA254D1D2EC22700F5135F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FDDA0CBB1D2D9D6100A9390A /* PetTableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetTableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA0CBE1D2D9D6100A9390A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDA0CC01D2D9D6100A9390A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +30,7 @@
 		FDDA0CC71D2D9D6100A9390A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDDA0CCA1D2D9D6100A9390A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDDA0CCC1D2D9D6100A9390A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDDA0CF21D2DA50200A9390A /* Dogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dogs.swift; sourceTree = "<group>"; };
+		FDDA0CF21D2DA50200A9390A /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		FDDA0CF61D2DAC4A00A9390A /* DogsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +88,7 @@
 		FDDA0CF51D2DA52000A9390A /* Modal */ = {
 			isa = PBXGroup;
 			children = (
-				FDDA0CF21D2DA50200A9390A /* Dogs.swift */,
+				FDDA0CF21D2DA50200A9390A /* Dog.swift */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -92,6 +96,8 @@
 		FDDA0CF81D2DAC5F00A9390A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5ECA254C1D2EC22700F5135F /* CardStack.swift */,
+				5ECA254D1D2EC22700F5135F /* CardView.swift */,
 				FDDA0CF61D2DAC4A00A9390A /* DogsTableViewCell.swift */,
 			);
 			name = Views;
@@ -129,6 +135,7 @@
 				TargetAttributes = {
 					FDDA0CBA1D2D9D6100A9390A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5B22GCUFZ7;
 					};
 				};
 			};
@@ -168,10 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECA254F1D2EC22700F5135F /* CardView.swift in Sources */,
 				FDDA0CC31D2D9D6100A9390A /* SecondViewController.swift in Sources */,
 				FDDA0CBF1D2D9D6100A9390A /* AppDelegate.swift in Sources */,
+				5ECA254E1D2EC22700F5135F /* CardStack.swift in Sources */,
 				FDDA0CF71D2DAC4A00A9390A /* DogsTableViewCell.swift in Sources */,
-				FDDA0CF31D2DA50200A9390A /* Dogs.swift in Sources */,
+				FDDA0CF31D2DA50200A9390A /* Dog.swift in Sources */,
 				FDDA0CC11D2D9D6100A9390A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PetTableViewApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.PetTableViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -296,10 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PetTableViewApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FrostEnterprises.PetTableViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -322,6 +337,7 @@
 				FDDA0CD11D2D9D6100A9390A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

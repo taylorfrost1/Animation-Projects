@@ -9,6 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    
+    @IBOutlet weak var cardStackView: CardStack!
 
     override func viewDidLoad() {
         super.viewDidLoad()
