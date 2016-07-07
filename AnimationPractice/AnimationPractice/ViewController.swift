@@ -10,31 +10,58 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var swiftOutlet: UIImageView!
+    var redView = UIView()
     
-    var timer : NSTimer?
-
+    var label = UILabel()
+    
+    var string = "You have changed the color"
+    
+    @IBOutlet weak var buttonOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
- self.timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(moveButterfly), userInfo: nil, repeats: true)
-        
-        
     }
-    
-    func moveButterfly() {
-        let width = self.view.frame.size.width
-        let height = self.view.frame.size.height
+
+    @IBAction func buttonTapped(sender: UIButton) {
         
-        UIView.animateWithDuration(2.0) {
+        print("the button is working")
+        
+        let redViewFrame = CGRect(x: 0, y: 0, width: 1000, height: 500)
+        
+        self.redView = UIView(frame: redViewFrame)
+        
+        self.redView.backgroundColor = UIColor.redColor()
+        
+        self.view.addSubview(self.redView)
+        
+        
+        UIView.animateWithDuration(5.0) {
+            self.redView.alpha = 0.0
             
+            UIView.animateWithDuration(2.0, animations: {
+                self.redView.alpha = 1.0
+
+                
+        let label = UILabel(frame: CGRectMake(0, 0, 300, 21))
+                
+                
+            label.center = CGPointMake(185, 300)
+                
+                
+            label.textAlignment = NSTextAlignment.Center
+                
+                
+            label.text = "You have changed the color!"
+            
+                self.view.addSubview(label)
+
+            })
+        
         }
         
-        UIView.animateWithDuration(2.0) {
-            self.swiftOutlet.center = CGPoint(x: 0, y: 0)
-            
-        }
+        
     }
 
 

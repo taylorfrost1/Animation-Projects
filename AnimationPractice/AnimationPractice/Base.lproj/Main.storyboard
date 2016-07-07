@@ -17,21 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="wpm-ed-Uue">
-                                <rect key="frame" x="215" y="195" width="110" height="117"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuF-cm-kgb">
+                                <rect key="frame" x="277" y="520" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2N-be-MnO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VuF-cm-kgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="52Y-JI-0u1"/>
+                            <constraint firstItem="VuF-cm-kgb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="500" id="yDZ-Bc-plA"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="swiftOutlet" destination="wpm-ed-Uue" id="dKQ-qb-wVV"/>
+                        <outlet property="buttonOutlet" destination="VuF-cm-kgb" id="HTG-OL-tM8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <image name="swift" width="110" height="117"/>
-    </resources>
 </document>
